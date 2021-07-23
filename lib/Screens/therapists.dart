@@ -159,7 +159,7 @@ class _TherapistsState extends State<Therapists> {
                                             color: Utils().buttonColor)),
                                     child: Padding(
                                       padding: const EdgeInsets.symmetric(
-                                          horizontal: 20, vertical: 8),
+                                          horizontal: 16, vertical: 8),
                                       child: Text(
                                         'Book',
                                         style: TextStyle(
