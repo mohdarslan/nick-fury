@@ -36,7 +36,10 @@ class _SearchPageState extends State<SearchPage> {
               ),
               Expanded(
                   flex: 1,
-                  child: Image.asset('assets/images/Funnel.png'))
+                  child: Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: Image.asset('assets/images/Funnel.png'),
+                  ))
             ],
           ),
         ),

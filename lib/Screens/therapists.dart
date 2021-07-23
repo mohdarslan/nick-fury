@@ -121,30 +121,31 @@ class _TherapistsState extends State<Therapists> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              SizedBox(
-                                height: 8,
-                              ),
-                              InkWell(
-                                onTap: () {
-                                  control[index] = !control[index];
-                                  setState(() {});
-                                },
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      color: Color(0xFF202020),
-                                      shape: BoxShape.circle),
-                                  height: 50,
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(16.0),
-                                    child: control[index]
-                                        ? Image.asset(
-                                            'assets/images/HeartActive.png',
-                                            fit: BoxFit.fill,
-                                          )
-                                        : Image.asset(
-                                            'assets/images/HeartUnactive.png',
-                                            fit: BoxFit.fill,
-                                          ),
+
+                              Padding(
+                                padding: const EdgeInsets.only(top: 20),
+                                child: InkWell(
+                                  onTap: () {
+                                    control[index] = !control[index];
+                                    setState(() {});
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: Color(0xFF202020),
+                                        shape: BoxShape.circle),
+                                    height: 50,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(16.0),
+                                      child: control[index]
+                                          ? Image.asset(
+                                              'assets/images/HeartActive.png',
+                                              fit: BoxFit.fill,
+                                            )
+                                          : Image.asset(
+                                              'assets/images/HeartUnactive.png',
+                                              fit: BoxFit.fill,
+                                            ),
+                                    ),
                                   ),
                                 ),
                               ),
@@ -158,7 +159,7 @@ class _TherapistsState extends State<Therapists> {
                                             color: Utils().buttonColor)),
                                     child: Padding(
                                       padding: const EdgeInsets.symmetric(
-                                          horizontal: 16, vertical: 8),
+                                          horizontal: 20, vertical: 8),
                                       child: Text(
                                         'Book',
                                         style: TextStyle(

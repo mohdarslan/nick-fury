@@ -75,8 +75,8 @@ class _HomePageState extends State<HomePage> {
                             : active == 1
                                 ? 'Search'
                                 : 'Chat',
-                        style:
-                            TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 22, fontWeight: FontWeight.bold),
                       ),
                       active == 0
                           ? IconButton(
@@ -128,7 +128,7 @@ class _HomePageState extends State<HomePage> {
                 setState(() {});
               },
               child: Container(
-                height: 30,
+                height: 20,
                 child: active == 0
                     ? Image.asset('assets/images/HomeActive.png')
                     : Image.asset('assets/images/Home.png'),
@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> {
                 setState(() {});
               },
               child: Container(
-                height: 30,
+                height: 20,
                 child: active == 1
                     ? Image.asset('assets/images/SearchActive.png')
                     : Image.asset('assets/images/Search.png'),
@@ -150,7 +150,7 @@ class _HomePageState extends State<HomePage> {
                 setState(() {});
               },
               child: Container(
-                height: 30,
+                height: 20,
                 child: active == 2
                     ? Image.asset('assets/images/ChatActive.png')
                     : Image.asset('assets/images/Chat.png'),
